@@ -538,7 +538,7 @@
     <div class="container" style="padding: 0;">
       <div class="hero-badges">
         <span class="badge badge-eco">💰 經濟省錢・現省11萬日圓</span>
-        <span class="badge" style="background: rgba(16, 185, 129, 0.4);">🌸 首選 4月中旬出發</span>
+        <span class="badge" style="background: rgba(16, 185, 129, 0.45); font-weight:700;">🌸 春首選4月中 ｜ 🍁 秋王者11月</span>
         <span class="badge">✈️ 羽田直飛</span>
         <span class="badge">🚗 白濱租車</span>
         <span class="badge">🏡 本宮步行圏民宿</span>
@@ -553,8 +553,8 @@
           <strong>東京 鶯谷站</strong>
         </div>
         <div class="info-item">
-          <span>核心住宿</span>
-          <strong>本宮大社周邊民宿/B&B (附停車位)</strong>
+          <span>黃金時段</span>
+          <strong>4月中旬 或 11月中下旬</strong>
         </div>
         <div class="info-item">
           <span>預算節省</span>
@@ -574,7 +574,7 @@
       <div class="tabs">
         <button class="tab-btn active" onclick="switchTab('overview')">📌 旅程總覽</button>
         <button class="tab-btn" onclick="switchTab('hotel')">🏡 精選平價民宿</button>
-        <button class="tab-btn" onclick="switchTab('timing')">🌸 出發時機・花粉避雷</button>
+        <button class="tab-btn" onclick="switchTab('timing')">🍂 最佳時機（春vs秋）</button>
         <button class="tab-btn" onclick="switchTab('day1')">Day 1 入山與探路</button>
         <button class="tab-btn" onclick="switchTab('day2')">Day 2 精華健行</button>
         <button class="tab-btn" onclick="switchTab('day3')">Day 3 海鮮與瀑布</button>
@@ -696,18 +696,18 @@
     <section id="tab-timing" class="tab-content">
       <div class="card">
         <div class="card-title">🌸 出發時間與氣候評估（在日居民專屬防花粉攻略）</div>
-        <div class="card-desc">依據日本氣象廳（JMA）栗栖川觀測站數據，深度分析 2 月至 4 月的最佳出行時機。</div>
+        <div class="card-desc">依據日本氣象廳（JMA）中邊路栗栖川觀測站 30 年數據，深度分析春季與秋季的最佳出行時機。</div>
 
         <div class="highlight-box box-red">
           <div class="box-title">🚨 為什麼在日居民「絕對不能」在 3 月去走熊野古道？</div>
           <strong>1. 您的免疫水杯正在慢慢積水</strong>：住在東京，每年春天即使沒發病，體內其實早已累積抗體。<br>
-          <strong>2. 熊野古道是「柳杉大本營」</strong>：全線兩側皆是數十年樹齡的高聳柳杉與檜木。<br>
+          <strong>2. 熊野古道是「柳杉大本營」</strong>：全線兩側皆是數十年樹齡的高聳紀州柳杉與扁柏。<br>
           <strong>3. 健行深呼吸的致命傷害</strong>：3 月是柳杉花粉的<strong>最極致高峰期</strong>！健行爬坡時換氣量是日常數倍，極易在短短幾天內將水杯灌爆，誘發終生花粉症！
         </div>
 
         <div class="two-col-grid" style="margin: 14px 0;">
           <div class="mini-card" style="border-left: 4px solid var(--primary);">
-            <h4>🏆 唯一推薦：4 月中旬（4/10 ～ 4/22）</h4>
+            <h4>🏆 春季唯一推薦：4 月中旬（4/10 ～ 4/22）</h4>
             <p><strong>花粉安全期</strong>：柳杉完全歸零，檜木微量。<br>
             <strong>無霜雪無結冰</strong>：完全排除青苔石階薄冰打滑風險。<br>
             <strong>避開連假與春雨</strong>：避開菜種梅雨，亦搶在 4/29 黃金週前。</p>
@@ -717,6 +717,119 @@
             <p><strong>3 月</strong>：柳杉花粉暴走期（在日居民大忌）。<br>
             <strong>3 月底～4 月初</strong>：「菜種梅雨」春雨鋒面，連日陰雨。<br>
             <strong>4 月底（4/29~）</strong>：日本黃金週連假，房價翻倍人潮爆滿。</p>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>春季時段</th>
+                <th>降雪・結冰風險</th>
+                <th>降雨風險（氣象廳數據）</th>
+                <th>🌲 花粉危險度（スギ/ヒノキ）</th>
+                <th>綜合建議</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>2 月全月</strong></td>
+                <td>⚠️ 有降雪/結霜薄冰</td>
+                <td>雨量雖少，但易結凍</td>
+                <td>🟡 飛散初期（中低）</td>
+                <td>❌ <strong>不推薦</strong>：早晨破 0℃，石階結薄冰極滑。</td>
+              </tr>
+              <tr>
+                <td><strong>3 月全月</strong></td>
+                <td>🟢 無雪無霜</td>
+                <td>雨量適中 (182mm)</td>
+                <td>🔴 <strong>柳杉（スギ）最高峰！</strong></td>
+                <td>❌ <strong>大忌</strong>：極易灌爆免疫水杯誘發終生花粉症！</td>
+              </tr>
+              <tr style="background: #f0fdf4;">
+                <td><strong>4 月中旬<br>(4/10~4/22)</strong></td>
+                <td>🟢 <strong>完全無雪無結冰</strong></td>
+                <td>🟢 <strong>鋒面間隔晴朗期</strong></td>
+                <td>🟢 <strong>【安全期】柳杉歸零、檜木微量</strong></td>
+                <td style="color: var(--primary); font-weight: 700;">🌟 ★★★★★ 春季最完美週！保住水杯、氣溫宜人、避開人潮。</td>
+              </tr>
+              <tr>
+                <td><strong>4 月下旬</strong></td>
+                <td>🟢 無雪</td>
+                <td>降雨機率略增</td>
+                <td>🟢 花粉全面平息</td>
+                <td>❌ <strong>遇日本黃金週（4/29起）</strong>：房價翻倍、看熊貓人擠人。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 秋季黃金王者深度剖析 -->
+        <div style="margin-top: 24px; border-top: 2px dashed var(--border); padding-top: 20px;">
+          <div class="card-title" style="color: #b45309;">
+            🍁 另一個神級季節：秋季【10月下旬～11月下旬】全年度最佳王者！
+          </div>
+          <div class="card-desc">
+            在全日本資深山友與和歌山觀光局眼中，<strong>10月下旬至11月下旬</strong>甚至被公認為超越春天的「全年度熊野古道第一黃金季節」！
+          </div>
+
+          <div class="highlight-box box-green" style="background: #fffbeb; border-color: #d97706; color: #78350f;">
+            <div class="box-title">👑 為什麼秋天（特別是 11 月）是隱藏版的終極首選？</div>
+            <strong>1. 🌲 樹木花粉徹底為零（0%！）</strong>：日本柳杉（スギ）與扁柏（ヒノキ）只在春季開花，秋天完全零花粉！在日居民可以百分之百放心深呼吸，免疫水杯零風險。<br>
+            <strong>2. ☀️ 雨量比春天還要少三分之一</strong>：11 月降雨量僅 <strong>134mm</strong>（4 月為 199mm），秋高氣爽（秋晴れ），萬里無雲，石階乾燥防滑。<br>
+            <strong>3. ❄️ 零降雪、零結霜薄冰</strong>：白天高溫舒適（18.5℃），清晨低溫約 5.8℃，全線均在冰點以上，無結冰打滑摔倒風險。<br>
+            <strong>4. 🍁 絕美紅葉與金黃銀杏（11月中下旬見頃）</strong>：楓紅、金黃巨銀杏與深綠古杉交織，青岸渡寺三重塔與那智瀑布色彩最為震撼。<br>
+            <strong>5. 🦞 頂級海鮮盛季</strong>：勝浦生鮮黑鮪魚油脂最厚，且和歌山「伊勢龍蝦（伊勢海老）」10 月起正式解禁開捕！
+          </div>
+
+          <!-- 秋季氣象表 -->
+          <div class="table-container" style="margin-top: 12px;">
+            <table>
+              <thead>
+                <tr>
+                  <th>秋季月份</th>
+                  <th>降雨量（氣象廳數據）</th>
+                  <th>白天高溫 / 清晨低溫</th>
+                  <th>🌲 樹木花粉</th>
+                  <th>綜合評價</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>9 月全月</strong></td>
+                  <td>301.3 mm (高風險)</td>
+                  <td>28.6℃ / 18.3℃</td>
+                  <td>🟢 0%</td>
+                  <td>❌ <strong>強烈避開</strong>：颱風高發期、殘暑悶熱、山蛭活躍。</td>
+                </tr>
+                <tr>
+                  <td><strong>10 月上～中旬</strong></td>
+                  <td>215.0 mm</td>
+                  <td>23.7℃ / 12.0℃</td>
+                  <td>🟢 0%</td>
+                  <td>⚠️ <strong>普通</strong>：秋雨前線偶有陣雨，氣候漸漸涼爽。</td>
+                </tr>
+                <tr style="background: #fef3c7;">
+                  <td><strong>10月下旬～11月下旬</strong></td>
+                  <td><strong>134.0 mm (超乾爽！)</strong></td>
+                  <td><strong>18.5℃ / 5.8℃</strong></td>
+                  <td>🟢 <strong>0% 完全無花粉</strong></td>
+                  <td style="color: #b45309; font-weight: 700;">👑 ★★★★★ 全年度終極王者！秋高氣爽、紅葉絕景、海鮮肥美。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 春秋大決策對照卡 -->
+          <div class="two-col-grid" style="margin-top: 16px;">
+            <div class="mini-card" style="border-left: 4px solid var(--primary);">
+              <h4>🌸 若選「春季」：4/10 ～ 4/22</h4>
+              <p>適合喜愛<strong>滿山嫩綠茶園、清新春風與山櫻春色</strong>的旅人。柳杉花粉已死，氣溫宜人（18~21℃）。</p>
+            </div>
+            <div class="mini-card" style="border-left: 4px solid #d97706;">
+              <h4>🍁 若選「秋季」：10/25 ～ 11/25</h4>
+              <p>適合追求<strong>全年度最高晴天率、雨量極低、零花粉絕對防護、漫山紅葉金黃銀杏與伊勢海老肥美</strong>的旅人！</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1055,6 +1168,9 @@
     </button>
     <button class="bottom-nav-item" onclick="switchTab('hotel')">
       <span class="icon">🏡</span>民宿
+    </button>
+    <button class="bottom-nav-item" onclick="switchTab('timing')">
+      <span class="icon">🍂</span>時機
     </button>
     <button class="bottom-nav-item" onclick="switchTab('day2')">
       <span class="icon">🥾</span>D2健行
