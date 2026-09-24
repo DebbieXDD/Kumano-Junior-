@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>熊野古道中邊路 4天3夜【經濟實惠方案】雙人自駕健行與平價民宿指南</title>
+  <style>
+    :root {
+      --primary: #155e43;
+      --primary-light: #208660;
+      --primary-bg: #edf7f2;
+      --torii-red: #c62828;
+      --torii-light: #ffebee;
+      --onsen-orange: #d84315;
+      --onsen-light: #fbe9e7;
+      --sea-blue: #1565c0;
+      --sea-light: #e3f2fd;
+      --panda-yellow: #f9a825;
+      --panda-light: #fffde7;
+      --bg: #f8faf9;
+      --surface: #ffffff;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+      --shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 90px;
+    }
+
+    /* 頂部切換橫幅 */
+    .switch-banner {
+      background: #0f2e24;
+      color: #ffffff;
+      padding: 10px 16px;
+      font-size: 0.82rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .switch-btn {
+      color: #fed7aa;
+      text-decoration: none;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 4px 12px;
+      border-radius: 20px;
+      transition: all 0.2s;
+      font-size: 0.78rem;
+    }
+    .switch-btn:hover { background: rgba(255, 255, 255, 0.25); color: #ffffff; }
+
+    /* 頂部形象 Header */
+    .hero {
+      background: linear-gradient(135deg, rgba(21, 94, 67, 0.96), rgba(32, 134, 96, 0.9)),
+                  radial-gradient(circle at top right, #34d399, transparent);
+      color: #ffffff;
+      padding: 30px 20px 24px;
+      border-radius: 0 0 24px 24px;
+      box-shadow: 0 8px 30px rgba(21, 94, 67, 0.2);
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(8px);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .badge-eco { background: #059669; }
+    .badge-torii { background: rgba(198, 40, 40, 0.4); }
+
+    .hero-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-subtitle {
+      font-size: 0.88rem;
+      opacity: 0.9;
+      font-weight: 400;
+    }
+
+    .hero-info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 18px;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      font-size: 0.82rem;
+    }
+
+    .info-item span {
+      display: block;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.72rem;
+      margin-bottom: 2px;
+    }
+
+    /* 容器 */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    /* 導航 Tab 切換 */
+    .tabs-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(248, 250, 249, 0.96);
+      backdrop-filter: blur(12px);
+      padding: 10px 0;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .tabs::-webkit-scrollbar { display: none; }
+
+    .tab-btn {
+      flex: 0 0 auto;
+      padding: 8px 16px;
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px rgba(21, 94, 67, 0.25);
+    }
+
+    /* 內容分頁面 */
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 卡片與元件 */
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    /* 時間軸 Timeline */
+    .timeline {
+      position: relative;
+      padding-left: 24px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: #e2e8f0;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 24px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 8px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -24px;
+      top: 2px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 3px solid var(--primary);
+      z-index: 2;
+    }
+
+    .timeline-dot.torii { border-color: var(--torii-red); }
+    .timeline-dot.hotel { border-color: #059669; }
+    .timeline-dot.sea { border-color: var(--sea-blue); }
+    .timeline-dot.panda { border-color: var(--panda-yellow); }
+
+    .time-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: #f1f5f9;
+      color: #475569;
+      margin-bottom: 4px;
+    }
+
+    .activity-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .activity-desc {
+      font-size: 0.85rem;
+      color: #4b5563;
+      margin-top: 4px;
+    }
+
+    .map-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 0.72rem;
+      color: var(--sea-blue);
+      background: var(--sea-light);
+      padding: 2px 8px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* 醒目區塊 */
+    .highlight-box {
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      margin: 12px 0;
+      font-size: 0.85rem;
+      border-left: 4px solid;
+    }
+
+    .box-green {
+      background: var(--primary-bg);
+      border-color: var(--primary);
+      color: #0f3d2c;
+    }
+
+    .box-orange {
+      background: var(--onsen-light);
+      border-color: var(--onsen-orange);
+      color: #7c2d12;
+    }
+
+    .box-blue {
+      background: var(--sea-light);
+      border-color: var(--sea-blue);
+      color: #0c4a6e;
+    }
+
+    .box-red {
+      background: var(--torii-light);
+      border-color: var(--torii-red);
+      color: #7f1d1d;
+    }
+
+    .box-title {
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 4px;
+      font-size: 0.88rem;
+    }
+
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .mini-card {
+      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px;
+    }
+
+    .mini-card h4 {
+      font-size: 0.92rem;
+      color: var(--primary);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .mini-card p {
+      font-size: 0.82rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
+    /* 住宿推薦卡片 */
+    .hotel-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      margin-bottom: 12px;
+      background: #ffffff;
+      transition: box-shadow 0.2s;
+    }
+    .hotel-card:hover {
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+    .hotel-card h4 {
+      font-size: 1rem;
+      color: var(--primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .hotel-price {
+      font-size: 0.82rem;
+      color: #059669;
+      background: #ecfdf5;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    /* 清單 Checklist */
+    .checklist-group {
+      margin-bottom: 16px;
+    }
+
+    .checklist-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      margin-bottom: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+
+    .checklist-item.checked {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+      text-decoration: line-through;
+      color: #9ca3af;
+    }
+
+    .checklist-item input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--primary);
+    }
+
+    /* 表格 */
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: #f8fafc;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .price-col {
+      text-align: right;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    /* 手機底部導覽列 */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 6px calc(8px + env(safe-area-inset-bottom));
+      z-index: 1000;
+    }
+
+    .bottom-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 0.68rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+
+    .bottom-nav-item.active {
+      color: var(--primary);
+    }
+
+    .bottom-nav-item .icon {
+      font-size: 1.15rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        padding: 40px 32px 30px;
+        border-radius: 0 0 32px 32px;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .hero-info-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .container {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 頂端方案切換條 -->
+  <aside class="switch-banner">
+    <div>🏷️ 目前瀏覽：<strong>【🌿 經濟實惠方案・平價民宿版】</strong></div>
+    <a href="index.html" class="switch-btn">👉 切換至【♨️ 極致放鬆方案・溫泉度假版】➔</a>
+  </aside>
+
+  <!-- 形象看板 -->
+  <header class="hero">
+    <div class="container" style="padding: 0;">
+      <div class="hero-badges">
+        <span class="badge badge-eco">💰 經濟省錢・現省11萬日圓</span>
+        <span class="badge" style="background: rgba(16, 185, 129, 0.4);">🌸 首選 4月中旬出發</span>
+        <span class="badge">✈️ 羽田直飛</span>
+        <span class="badge">🚗 白濱租車</span>
+        <span class="badge">🏡 本宮步行圏民宿</span>
+        <span class="badge">🐼 冒險大世界</span>
+      </div>
+      <h1 class="hero-title">熊野古道中邊路 4天3夜</h1>
+      <p class="hero-subtitle">【經濟實惠方案】本宮徒步區優質民宿・黑鮪魚海港・自駕省錢攻略</p>
+
+      <div class="hero-info-grid">
+        <div class="info-item">
+          <span>出發地點</span>
+          <strong>東京 鶯谷站</strong>
+        </div>
+        <div class="info-item">
+          <span>核心住宿</span>
+          <strong>本宮大社周邊民宿/B&B (附停車位)</strong>
+        </div>
+        <div class="info-item">
+          <span>預算節省</span>
+          <strong>比溫泉旅館省下 ¥114,000</strong>
+        </div>
+        <div class="info-item">
+          <span>健行模式</span>
+          <strong>搭15分公車上山 ➔ 走回民宿/車旁</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 頁籤切換器 -->
+  <div class="tabs-wrapper">
+    <div class="container" style="padding: 0 16px;">
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('overview')">📌 旅程總覽</button>
+        <button class="tab-btn" onclick="switchTab('hotel')">🏡 精選平價民宿</button>
+        <button class="tab-btn" onclick="switchTab('timing')">🌸 出發時機・花粉避雷</button>
+        <button class="tab-btn" onclick="switchTab('day1')">Day 1 入山與探路</button>
+        <button class="tab-btn" onclick="switchTab('day2')">Day 2 精華健行</button>
+        <button class="tab-btn" onclick="switchTab('day3')">Day 3 海鮮與瀑布</button>
+        <button class="tab-btn" onclick="switchTab('day4')">Day 4 熊貓與歸途</button>
+        <button class="tab-btn" onclick="switchTab('budget')">💰 實惠預算明細</button>
+        <button class="tab-btn" onclick="switchTab('pack')">🎒 裝備清單</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- ==================== TAB: OVERVIEW ==================== -->
+    <section id="tab-overview" class="tab-content active">
+      <div class="card">
+        <div class="card-title">💡 經濟實惠方案的巧妙設計</div>
+        <div class="card-desc">行程完全保留最精華的健行、黑鮪魚大餐與看熊貓，只調整住宿策略，體驗不打折但荷包省大錢！</div>
+
+        <div class="two-col-grid">
+          <div class="mini-card">
+            <h4>🏡 住宿改住本宮周邊民宿</h4>
+            <p>走路即可抵達熊野本宮大社或開車 5~15 分鐘，全部附設免費停車位。兩人兩晚僅約 ¥26,000（溫泉旅館需 ¥118,800）。</p>
+          </div>
+          <div class="mini-card">
+            <h4>🥾 健行動線更加自由彈性</h4>
+            <p>住在本宮前，早晨搭 15 分鐘公車（¥470）上到發心門王子，一路漫步下坡 7km，終點直接走回民宿沖澡休息，不用受限接駁車時間！</p>
+          </div>
+          <div class="mini-card">
+            <h4>♨️ 在地人的「日歸泡湯」秘技</h4>
+            <p>開車 5~8 分鐘就能到湯之峰煮溫泉蛋泡つぼ湯（¥800），或到渡瀨溫泉大露天浴場泡湯（¥1,000），想泡就去，不花冤枉錢！</p>
+          </div>
+          <div class="mini-card">
+            <h4>🐟 產地海鮮與冒險世界全都在</h4>
+            <p>第 3 天依然前往勝浦港大啖日本第一生鮮黑鮪魚，第 4 天照樣在機場旁冒險大世界痛快看熊貓！</p>
+          </div>
+        </div>
+
+        <div class="highlight-box box-green" style="margin-top: 16px;">
+          <div class="box-title">💰 震撼價差對比（雙人 4 天 3 夜）</div>
+          * <strong>極致放鬆方案（ささゆり溫泉飯店）</strong>：約 ¥270,800（每人約 13.5 萬日圓）<br>
+          * <strong>經濟實惠方案（本宮平價優質民宿）</strong>：約 <strong>¥156,000</strong>（每人僅約 <strong>7.8 萬日圓 / 台幣約 1.6 萬元</strong>）！<br>
+          👉 <strong>兩人現賺約 ¥114,800 日圓！</strong>
+        </div>
+
+        <div class="highlight-box box-orange">
+          <div class="box-title">🚨 在日居民關鍵提醒：唯一推薦【4月中旬】出發！</div>
+          因為您長住在日本，請務必避開 <strong>3 月柳杉（スギ）花粉大爆發極大期</strong>，避免深呼吸大量吸入把體內免疫水杯灌爆，誘發終生花粉症！<br>
+          <strong>4 月 10 日 ～ 4 月 22 日</strong> 柳杉已完全結束、檜木大幅消退、完全不結冰、避開菜種梅雨與黃金週，是最完美的黃金健行期。
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB: HOTEL ==================== -->
+    <section id="tab-hotel" class="tab-content">
+      <div class="card">
+        <div class="card-title">🏡 本宮大社周邊精選平價民宿（附免費停車場）</div>
+        <div class="card-desc">非溫泉旅館，乾淨舒適、高評價，距離本宮大社徒步 1~15 分鐘或開車極近：</div>
+
+        <div class="hotel-card">
+          <h4>
+            1. B&B Cafe ほんぐう (B&B Cafe Hongu)
+            <span class="hotel-price">2晚雙人約 ¥26,000~¥32,000</span>
+          </h4>
+          <p style="font-size: 0.85rem; color: #4b5563; margin-bottom: 6px;">
+            📍 <strong>位置</strong>：熊野本宮大社正前方，<strong>步行僅 1 分鐘！</strong> 門口就是公車站牌與登山口。<br>
+            🚗 <strong>停車</strong>：附設房客免費專屬停車位。<br>
+            ✨ <strong>特色</strong>：1 樓為氣氛悠閒的在地咖啡館，2 樓為現代舒適的乾淨客房。早晨走幾步路就能到大社晨間參拜，清靜無人超神聖。
+          </p>
+          <a class="map-btn" href="https://maps.google.com/?q=B%26B+Cafe+Hongu" target="_blank">📍 Google Maps 導航</a>
+        </div>
+
+        <div class="hotel-card">
+          <h4>
+            2. 旅人の宿 蒼空 げすとはうす (Sora Guesthouse)
+            <span class="hotel-price">2晚雙人約 ¥24,000~¥30,000</span>
+          </h4>
+          <p style="font-size: 0.85rem; color: #4b5563; margin-bottom: 6px;">
+            📍 <strong>位置</strong>：距離熊野本宮大社與大齋原步行約 10~15 分鐘，開車 2 分鐘。<br>
+            🚗 <strong>停車</strong>：附設專用免費停車場。<br>
+            ✨ <strong>特色</strong>：<strong>全室皆附設獨立衛浴與獨立洗手間！</strong> 免去與他人共用衛浴的尷尬。設有投幣式洗衣機、乾燥機與小廚房，歐美古道徒步者極度好評。
+          </p>
+          <a class="map-btn" href="https://maps.google.com/?q=Sora+Guesthouse+Hongu" target="_blank">📍 Google Maps 導航</a>
+        </div>
+
+        <div class="hotel-card">
+          <h4>
+            3. ゲストハウス 結 -Yui- (Guesthouse Yui)
+            <span class="hotel-price">2晚雙人約 ¥22,000~¥28,000</span>
+          </h4>
+          <p style="font-size: 0.85rem; color: #4b5563; margin-bottom: 6px;">
+            📍 <strong>位置</strong>：距離熊野本宮大社步行約 10 分鐘，位於視野極佳的高台上。<br>
+            🚗 <strong>停車</strong>：附設免費寬敞停車場。<br>
+            ✨ <strong>特色</strong>：陽台可直接遠眺大齋原的日本第一大鳥居！提供完整設備的共用廚房可自炊料理，老闆熱情親切。
+          </p>
+          <a class="map-btn" href="https://maps.google.com/?q=Guesthouse+Yui+Kumano" target="_blank">📍 Google Maps 導航</a>
+        </div>
+
+        <div class="hotel-card">
+          <h4>
+            4. Kumano Backpackers (熊野背包客旅舍・獨立個室)
+            <span class="hotel-price">2晚雙人約 ¥20,000~¥26,000</span>
+          </h4>
+          <p style="font-size: 0.85rem; color: #4b5563; margin-bottom: 6px;">
+            📍 <strong>位置</strong>：本宮大社鳥居旁約 100 公尺，步行 1 分鐘。<br>
+            🚗 <strong>停車</strong>：提供特約免費停車。<br>
+            ✨ <strong>特色</strong>：有雙人日式榻榻米獨立個室，價格極度親民，下樓即是商店與餐廳。
+          </p>
+          <a class="map-btn" href="https://maps.google.com/?q=Kumano+Backpackers" target="_blank">📍 Google Maps 導航</a>
+        </div>
+
+        <div class="highlight-box box-blue">
+          <div class="box-title">🌊 第 3 晚勝浦平價住宿（港口周邊）</div>
+          勝浦港不一定要住昂貴的洞窟溫泉飯店，推薦挑選勝浦港邊的平價設計旅宿如 <strong>「WhyKumano Hostel & Cafe Bar（獨立雙人房）」</strong> 或 <strong>「Hotel Charmant シャルマン」</strong>（附免費停車位），一晚雙人只要約 <strong>¥10,000 ~ ¥13,000</strong>，下樓步行 3 分鐘就能到魚市場吃黑鮪魚刺身！
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB: TIMING ==================== -->
+    <section id="tab-timing" class="tab-content">
+      <div class="card">
+        <div class="card-title">🌸 出發時間與氣候評估（在日居民專屬防花粉攻略）</div>
+        <div class="card-desc">依據日本氣象廳（JMA）栗栖川觀測站數據，深度分析 2 月至 4 月的最佳出行時機。</div>
+
+        <div class="highlight-box box-red">
+          <div class="box-title">🚨 為什麼在日居民「絕對不能」在 3 月去走熊野古道？</div>
+          <strong>1. 您的免疫水杯正在慢慢積水</strong>：住在東京，每年春天即使沒發病，體內其實早已累積抗體。<br>
+          <strong>2. 熊野古道是「柳杉大本營」</strong>：全線兩側皆是數十年樹齡的高聳柳杉與檜木。<br>
+          <strong>3. 健行深呼吸的致命傷害</strong>：3 月是柳杉花粉的<strong>最極致高峰期</strong>！健行爬坡時換氣量是日常數倍，極易在短短幾天內將水杯灌爆，誘發終生花粉症！
+        </div>
+
+        <div class="two-col-grid" style="margin: 14px 0;">
+          <div class="mini-card" style="border-left: 4px solid var(--primary);">
+            <h4>🏆 唯一推薦：4 月中旬（4/10 ～ 4/22）</h4>
+            <p><strong>花粉安全期</strong>：柳杉完全歸零，檜木微量。<br>
+            <strong>無霜雪無結冰</strong>：完全排除青苔石階薄冰打滑風險。<br>
+            <strong>避開連假與春雨</strong>：避開菜種梅雨，亦搶在 4/29 黃金週前。</p>
+          </div>
+          <div class="mini-card" style="border-left: 4px solid #d32f2f;">
+            <h4>⚠️ 嚴格避開：3 月全月 ＆ 4 月初</h4>
+            <p><strong>3 月</strong>：柳杉花粉暴走期（在日居民大忌）。<br>
+            <strong>3 月底～4 月初</strong>：「菜種梅雨」春雨鋒面，連日陰雨。<br>
+            <strong>4 月底（4/29~）</strong>：日本黃金週連假，房價翻倍人潮爆滿。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB: DAY 1 ==================== -->
+    <section id="tab-day1" class="tab-content">
+      <div class="card">
+        <div class="card-title">📅 Day 1：飛向靈場入口・古道巡禮與入住本宮</div>
+        <div class="card-desc">取車自駕穿梭山林，探訪古道起點，入住本宮大社旁溫馨民宿。</div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">06:15 - 07:00</span>
+            <div class="activity-title">鶯谷出發 ➔ 前往羽田機場第 1 航廈</div>
+            <div class="activity-desc">搭乘 JR 到濱松町轉東京單軌電車機場快速，輕鬆抵達羽田機場。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">07:45 - 08:55</span>
+            <div class="activity-title">搭乘 JAL 213 航班（羽田 ✈️ 南紀白濱）</div>
+            <div class="activity-desc">航程僅 70 分鐘，快速降落南紀白濱機場。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">09:15 - 09:40</span>
+            <div class="activity-title">白濱機場航廈內取車（租車自駕）</div>
+            <div class="activity-desc">領取小型車，兩人大行李箱直接丟後車廂，免去託運煩惱。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot torii"></div>
+            <span class="time-tag">10:20 - 13:00</span>
+            <div class="activity-title">
+              熊野古道起點【瀧尻王子】與高原散策
+              <a class="map-btn" href="https://maps.google.com/?q=Takijiri-oji" target="_blank">📍 瀧尻王子</a>
+            </div>
+            <div class="activity-desc">參觀「熊野古道館」領取集章手冊；開車上山至「高原 霧之鄉」俯瞰梯田雲海享用午餐。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">14:00 - 15:30</span>
+            <div class="activity-title">
+              順訪【湯之峰溫泉】煮蛋 ＆ 日歸名湯體驗
+              <a class="map-btn" href="https://maps.google.com/?q=Yunomine+Onsen" target="_blank">📍 湯之峰溫泉</a>
+            </div>
+            <div class="activity-desc">
+              在「湯筒」煮美味溫泉蛋；只要花 <strong>¥400～¥800</strong> 就能體驗世界遺產「つぼ湯」或公眾浴場，不用住溫泉飯店也能享受千年古湯！
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot hotel"></div>
+            <span class="time-tag">16:30 Check-in</span>
+            <div class="activity-title">入住【本宮大社周邊民宿】（如 Sora 或 B&B Cafe）</div>
+            <div class="activity-desc">
+              車子停在民宿專用免費停車場。傍晚悠閒散步到本宮大社前，在在地食堂享用熱騰騰的鄉土蕎麥麵或定食。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB: DAY 2 ==================== -->
+    <section id="tab-day2" class="tab-content">
+      <div class="card">
+        <div class="card-title">📅 Day 2：超自由自主健行！公車上山 ➔ 漫步下山回民宿</div>
+        <div class="card-desc">住在本宮旁的最大優勢：搭 15 分鐘公車直達發心門王子，走 7km 緩下坡直接走回民宿，零時間壓力！</div>
+
+        <div class="highlight-box box-green">
+          <div class="box-title">🥾 自主健行極簡動線</div>
+          <strong>去程</strong>：本宮大社前搭公車 15 分鐘（車資僅 ¥470/人）直達「發心門王子」<br>
+          <strong>健行</strong>：發心門王子 ➔ 水飲 ➔ 伏拜 ➔ 三軒茶屋 ➔ 熊野本宮大社（約 7km，2.5~3h 緩下坡）<br>
+          <strong>終點</strong>：走回本宮大社與大齋原，<strong>步行直接回到自己的民宿！</strong>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">07:30 - 08:30</span>
+            <div class="activity-title">在民宿享用早餐 ＆ 著輕便健行裝備</div>
+            <div class="activity-desc">只背隨身小包（水壺、毛巾、雨衣），其餘行李放房間。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">09:05</span>
+            <div class="activity-title">
+              本宮大社前搭乘公車前往發心門王子
+              <span class="map-btn">龍神巴士 ¥470</span>
+            </div>
+            <div class="activity-desc">從民宿步行 2~5 分鐘至大社前公車站，搭車 15 分鐘直達高海拔的「發心門王子」。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot torii"></div>
+            <span class="time-tag">09:25 - 12:30</span>
+            <div class="activity-title">
+              【中邊路黃金健行 7km 緩下坡】
+              <a class="map-btn" href="https://maps.google.com/?q=Hosshinmon-oji" target="_blank">📍 發心門王子</a>
+            </div>
+            <div class="activity-desc">穿越杉木林與里山茶園，經伏拜王子遠眺大社屋頂，沿途鳥語花香、微風徐徐，極度好走。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot torii"></div>
+            <span class="time-tag">12:30 - 14:30</span>
+            <div class="activity-title">
+              參拜【熊野本宮大社】＆【大齋原大鳥居】
+              <a class="map-btn" href="https://maps.google.com/?q=Kumano+Hongu+Taisha" target="_blank">📍 本宮大社</a>
+            </div>
+            <div class="activity-desc">步道終點直達本宮大社！門前町吃「目張壽司」，再步行參拜 34 米日本最大鳥居。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot hotel"></div>
+            <span class="time-tag">14:45</span>
+            <div class="activity-title">漫步直接回民宿休息沖涼</div>
+            <div class="activity-desc">完全不用等飯店接駁車，幾分鐘就走回房間換上乾淨衣服，自由度 100 分。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">16:30 傍晚</span>
+            <div class="activity-title">
+              自駕 8 分鐘前往【渡瀨溫泉大露天浴池】日歸泡湯
+              <a class="map-btn" href="https://maps.google.com/?q=Wataze+Onsen" target="_blank">📍 渡瀨溫泉</a>
+            </div>
+            <div class="activity-desc">
+              開車到渡瀨溫泉，只要付 <strong>¥1,000 / 人</strong> 就能進入西日本最大級的露天溫泉大浴場暢泡！享受與大飯店完全相同的溫泉，省下數萬日圓！
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB: DAY 3 ==================== -->
+    <section id="tab-day3" class="tab-content">
+      <div class="card">
+        <div class="card-title">📅 Day 3：海之靈場・勝浦黑鮪魚・那智瀑布</div>
+        <div class="card-desc">退房驅車前往太平洋岸，挑戰 538 階原始石階，大口吃產地黑鮪魚刺身！</div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">08:30 出發</span>
+            <div class="activity-title">開車順熊野川前往新宮市（國道 168 號，約 40 分鐘）</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot torii"></div>
+            <span class="time-tag">09:20 - 10:45</span>
+            <div class="activity-title">
+              挑戰【神倉神社】538 階原始巨石階
+              <a class="map-btn" href="https://maps.google.com/?q=Kamikura+Shrine" target="_blank">📍 神倉神社</a>
+            </div>
+            <div class="activity-desc">登上懸崖峭壁，參拜神聖巨石「琴引岩」，俯瞰新宮市街與太平洋海天一色。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot sea"></div>
+            <span class="time-tag">11:30 - 12:45</span>
+            <div class="activity-title">
+              【紀伊勝浦港】勝浦にぎわい市場吃極品生鮮黑鮪魚！
+              <a class="map-btn" href="https://maps.google.com/?q=Katsuura+Nigiwai+Market" target="_blank">📍 勝浦市場</a>
+            </div>
+            <div class="activity-desc">享用日本第一生鮮黑鮪魚中腹/大腹丼飯、炙燒鮪魚壽司與烤扇貝，油脂甘甜滑順。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot torii"></div>
+            <span class="time-tag">13:15 - 16:00</span>
+            <div class="activity-title">
+              【大門坂 ➔ 那智大社 ➔ 那智瀑布】
+              <a class="map-btn" href="https://maps.google.com/?q=Daimonzaka+Parking" target="_blank">📍 大門坂</a>
+            </div>
+            <div class="activity-desc">車停免費停車場，漫步 800 年夫妻杉青苔石疊古道，參拜那智大社與青岸渡寺，觀賞落差 133 米那智瀑布。搭 7 分鐘下坡公車回停車場。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot hotel"></div>
+            <span class="time-tag">16:45 Check-in</span>
+            <div class="activity-title">入住勝浦港平價旅宿（如 WhyKumano 或 Hotel Charmant）</div>
+            <div class="activity-desc">
+              附免費停車位。晚上直接步行在勝浦老街挑選心儀的居酒屋，品嚐在地海鮮與地酒，自由度極高！
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB: DAY 4 ==================== -->
+    <section id="tab-day4" class="tab-content">
+      <div class="card">
+        <div class="card-title">📅 Day 4：白濱冒險世界・看熊貓 ➔ 機場返京</div>
+        <div class="card-desc">近距離接觸大熊貓，暢遊野生動物園與海豚秀，在機場旁無縫還車飛回羽田。</div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">08:30 - 10:00</span>
+            <div class="activity-title">出發前往白濱（途經串本・橋杭岩奇石拍照）</div>
+            <div class="activity-desc">沿海岸線公路開車，約 1 小時 20 分抵達白濱。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot panda"></div>
+            <span class="time-tag">10:00 - 15:30</span>
+            <div class="activity-title">
+              【冒險大世界 Adventure World】
+              <a class="map-btn" href="https://maps.google.com/?q=Adventure+World+Shirahama" target="_blank">📍 冒險世界</a>
+            </div>
+            <div class="activity-desc">
+              就在機場跑道正旁邊！看大熊貓啃竹子翻滾、搭遊園小火車看獅子大象、觀賞高水準露天海豚躍水秀。
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">15:45 - 16:45</span>
+            <div class="activity-title">白濱三段壁海蝕斷崖 ＆ Toretore 市場伴手禮</div>
+            <div class="activity-desc">採購紀州頂級南高梅與橘子伴手禮。</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">16:50</span>
+            <div class="activity-title">白濱機場還車 ＆ 辦理登機</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="time-tag">18:25 - 19:40</span>
+            <div class="activity-title">搭乘 JAL 218 航班（白濱 ✈️ 羽田）➔ 回到鶯谷 (約20:45)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB: BUDGET ==================== -->
+    <section id="tab-budget" class="tab-content">
+      <div class="card">
+        <div class="card-title">💰 【經濟實惠方案】雙人預算明細表</div>
+        <div class="card-desc">真實住宿與開銷精算（日幣 JPY）：</div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>項目類別</th>
+                <th>實惠版詳細說明</th>
+                <th class="price-col">2 人合計預估</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>來回機票</strong></td>
+                <td>JAL 羽田 ⇄ 南紀白濱（早鳥特便 Special Saver）</td>
+                <td class="price-col">約 ¥48,000</td>
+              </tr>
+              <tr>
+                <td><strong>租車自駕</strong></td>
+                <td>白濱機場取還 小型車 4 天 ＋ 全險 ＋ 油資</td>
+                <td class="price-col">約 ¥34,000</td>
+              </tr>
+              <tr style="background: #f0fdf4;">
+                <td><strong>平價住宿（3 晚）</strong></td>
+                <td>
+                  <strong>本宮優質民宿 2 晚（約 ¥26,000）</strong> ＋<br>
+                  <strong>勝浦港平價旅館 1 晚（約 ¥13,000）</strong>（附免費停車）
+                </td>
+                <td class="price-col" style="color: #059669; font-weight: 800;">約 ¥39,000<br><span style="font-size: 0.72rem; color: #047857;">(原溫泉飯店 ¥154,800)</span></td>
+              </tr>
+              <tr>
+                <td><strong>餐飲與日歸溫泉</strong></td>
+                <td>勝浦黑鮪魚午餐、門前町美食、渡瀨日歸溫泉門票（¥1,000/人）</td>
+                <td class="price-col">約 ¥23,000</td>
+              </tr>
+              <tr>
+                <td><strong>門票與公車</strong></td>
+                <td>Adventure World 雙人門票 ＋ 發心門公車（¥470/人）</td>
+                <td class="price-col">約 ¥12,000</td>
+              </tr>
+              <tr style="background: #ecfdf5; border-top: 2px solid #059669;">
+                <td><strong>總計（2 人同行）</strong></td>
+                <td><strong>【經濟實惠方案】總費用</strong></td>
+                <td class="price-col" style="color: var(--primary); font-size: 1.15rem;">約 ¥156,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="highlight-box box-green" style="margin-top: 16px;">
+          <div class="box-title">🎉 雙人荷包大省 ¥114,800 日圓！</div>
+          * <strong>極致放鬆方案</strong>：雙人約 ¥270,800（每人約 13.5 萬日圓 / 台幣 2.8 萬）<br>
+          * <strong>經濟實惠方案</strong>：雙人約 <strong>¥156,000（每人僅約 7.8 萬日圓 / 台幣 1.6 萬）</strong>！<br>
+          省下來的十幾萬日幣，足夠買齊所有頂級 GORE-TEX 登山健行裝備與伴手禮！
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB: PACKING ==================== -->
+    <section id="tab-pack" class="tab-content">
+      <div class="card">
+        <div class="card-title">🎒 行前互動裝備檢查清單</div>
+        <div class="card-desc">點擊可直接勾選，自動為您記憶狀態：</div>
+
+        <div class="checklist-group">
+          <div class="checklist-title">🥾 熊野古道健行裝備</div>
+          <label class="checklist-item"><input type="checkbox"> 抓地防滑登山鞋/健行鞋（大門坂石階遇濕易滑，重要！）</label>
+          <label class="checklist-item"><input type="checkbox"> 輕量一日攻頂包（15~20L，健行當日背負水與雨具）</label>
+          <label class="checklist-item"><input type="checkbox"> 折疊式登山杖（保護膝蓋，上下階梯省力 30%）</label>
+          <label class="checklist-item"><input type="checkbox"> 透氣防水外套 / 輕便兩截式雨衣（山區天氣多變）</label>
+          <label class="checklist-item"><input type="checkbox"> 水壺 / 運動飲料（建議每人備 1~1.5L）</label>
+        </div>
+
+        <div class="checklist-group">
+          <div class="checklist-title">🚗 自駕與證件</div>
+          <label class="checklist-item"><input type="checkbox"> 台灣駕照正本 ＋ 日文譯本（若為台灣駕照）</label>
+          <label class="checklist-item"><input type="checkbox"> 護照、機票與租車確認信</label>
+          <label class="checklist-item"><input type="checkbox"> 車用手機導航架與充電線</label>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 手機底部導覽列 -->
+  <nav class="bottom-nav">
+    <button class="bottom-nav-item active" onclick="switchTab('overview')">
+      <span class="icon">📌</span>總覽
+    </button>
+    <button class="bottom-nav-item" onclick="switchTab('hotel')">
+      <span class="icon">🏡</span>民宿
+    </button>
+    <button class="bottom-nav-item" onclick="switchTab('day2')">
+      <span class="icon">🥾</span>D2健行
+    </button>
+    <button class="bottom-nav-item" onclick="switchTab('day3')">
+      <span class="icon">🐟</span>D3海鮮
+    </button>
+    <button class="bottom-nav-item" onclick="switchTab('day4')">
+      <span class="icon">🐼</span>D4樂園
+    </button>
+    <button class="bottom-nav-item" onclick="switchTab('budget')">
+      <span class="icon">💰</span>預算
+    </button>
+  </nav>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+      });
+      const activeContent = document.getElementById('tab-' + tabId);
+      if (activeContent) activeContent.classList.add('active');
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(tabId)) {
+          btn.classList.add('active');
+          btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+      });
+
+      document.querySelectorAll('.bottom-nav-item').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(tabId)) {
+          btn.classList.add('active');
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const items = document.querySelectorAll('.checklist-item');
+      items.forEach((item, index) => {
+        const checkbox = item.querySelector('input[type="checkbox"]');
+        const saved = localStorage.getItem('kumano_eco_pack_' + index);
+        if (saved === 'true') {
+          checkbox.checked = true;
+          item.classList.add('checked');
+        }
+
+        item.addEventListener('click', (e) => {
+          if (e.target !== checkbox) {
+            checkbox.checked = !checkbox.checked;
+          }
+          if (checkbox.checked) {
+            item.classList.add('checked');
+          } else {
+            item.classList.remove('checked');
+          }
+          localStorage.setItem('kumano_eco_pack_' + index, checkbox.checked);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
